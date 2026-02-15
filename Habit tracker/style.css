@@ -1,0 +1,63 @@
+/* ---------- PAGE BACKGROUND ---------- */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    color: white;
+
+    background-image: url("image/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* dark overlay for readability */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+
+/* ---------- INPUTS & BUTTONS ---------- */
+
+input,
+button {
+    padding: 10px;
+    margin: 6px;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    background: #00ffae;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* ---------- TASK CARDS ---------- */
+
+.task-card {
+    width: 320px;
+    margin: 12px auto;
+    padding: 15px;
+
+    border-radius: 10px;
+    color: black;
+
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(6px);
+}
+
+.task-completed {
+    background: #00ffae;
+}
+
+label {
+    display: block;
+    margin-top: 8px;
+}

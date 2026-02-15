@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Habit Quest Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>🏆 Habit Quest Pro</h1>
+
+    <!-- ========== USER DETAILS SECTION ========== -->
+    <div id="userBox">
+        <h2>User Details</h2>
+
+        <input id="nameInput" placeholder="Full Name">
+        <input id="ageInput" type="number" placeholder="Age">
+        <input id="emailInput" placeholder="Email">
+
+        <button onclick="saveUserDetails()">Continue</button>
+    </div>
+
+
+    <!-- ========== TASK SETUP SECTION ========== -->
+    <div id="taskSetupBox" style="display:none;">
+        <h2>Add Daily Tasks</h2>
+
+        <input id="taskNameInput" placeholder="Task name">
+
+        <label>Start Time</label>
+        <input id="taskStartTime" type="time">
+
+        <label>End Time</label>
+        <input id="taskEndTime" type="time">
+
+        <button onclick="addTaskToList()">Add Task</button>
+
+        <div id="taskPreviewList"></div>
+
+        <button onclick="saveAllTasks()">Start Tracking</button>
+    </div>
+
+
+    <!-- ========== DASHBOARD SECTION ========== -->
+    <div id="dashboardBox" style="display:none;">
+        <h2 id="welcomeText"></h2>
+        <h3 id="dayCounterText"></h3>
+        <h3 id="liveClockText"></h3>
+
+        <div id="taskCardsContainer"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
